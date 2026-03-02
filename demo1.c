@@ -1,23 +1,38 @@
+//    write a program to accept two number and display divison of the two number. check divide by zero error if divisor is zero then display errormsg
+
+
+
+
 # include <stdio.h>
+
 int main ()
+{
 
-{             // first question assign 1
+    float num1,num2,result;
 
-int a,b;
+    printf ( " enter first number:");
 
-printf("enter first number:");
+   scanf("%f",&num1);
 
-scanf (" %d ",&a);
+   printf (" enter second number:");
+   scanf ("%f",&num2);
 
-printf("enter second number:");
-scanf("%d",&b);
+   if (num2==0)
+   {
 
-printf("sum=%d\n",a+b);
+       printf("error! divison by zero is not allowed.");
+       }
 
-printf("difference=%d\n",a-b);
+       else {
 
-printf("product=%d\n",a*b);
+           result = num1 / num2;
+           printf ("divison =%2f",result);
 
-return 0;
+       }
 
-}
+       return 0;
+
+   }
+
+
+

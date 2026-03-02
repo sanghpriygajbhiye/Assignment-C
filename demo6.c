@@ -1,5 +1,4 @@
-//  write a program to accept an integer value and print its table assign-1 6th no question
-
+//  write a program to accept a 5 digit number and check wther its a numeric palindrime
 
 
 
@@ -8,24 +7,34 @@
 
 int main ()
 
-
 {
 
-    int num,i;
+    int num,rev=0,rem,temp;
 
-    printf ("enter a number:");
-
+    printf ("enter a 5 digit number:");
     scanf ("%d",&num);
 
-    for (i=1; i<=10; i++)
+    temp = num;
+
+    while (num>0)
 
         {
-            printf("%d x %d=%d\n", num,i,num * i);
+
+            rem = num % 10;
+            rev =rev * 10 +rem ;
+            num = num /10;
         }
 
+        if (temp ==rev) 
+            
+            printf ("palindrome");
 
-        return 0;
+            else 
+                printf (" not palindrone");
+
+                return 0;
 
 }
+
 
 

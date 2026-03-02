@@ -1,20 +1,34 @@
-# include  <stdio.h>
+ //   write a program to find maximum of two number using (a) if-else (b)conditional operator
+
+
+
+# include <stdio.h>
 
 int main ()
 
-{           //  4th question assign-1 using multiple printf statement
+{
+
+    int a,b;
+
+    printf("enter two number:");
+    scanf ("%d%d",&a,&b);
+
+    if (a>b)
 
 
-    printf ("*\n");
+       {
+           printf ("maximum number is : %d",a);
+       }
 
-    printf ("**\n");
+       else
+       {
+           printf ("maximum number is:%d",b);
+       }
 
-    printf ("***\n");
-
-    printf ("****\n");
-
-    printf ("*****\n");
-
-    return 0;
-
+       return 0;
 }
+
+
+
+
+

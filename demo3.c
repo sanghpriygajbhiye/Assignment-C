@@ -1,35 +1,29 @@
+// write a program to accept number and check wether the number is positive or negative or zero.
+
+
+
 # include <stdio.h>
-
-
 
 int main ()
 
 {
-                 // 3rd question assign-1
 
-    char ch;
     int num;
 
-    printf ("enter a character:");
+    printf (" enter a number:");
 
-    scanf ("%c",&ch);
+    scanf("%d",&num);
 
-    printf ("ASCII in decimal: %d\n",ch);
+    if (num > 0)
 
-    printf ("ASCII in octal: %o\n",ch);
+        printf (" number is positive");
 
-    printf ("ASCII in hex: %x\n",ch);
+        else if (num<0)
+            printf ("number is negative");
 
-    printf ("\n enter ASCII value: ");
+            else 
+                printf("number is zero");
 
-    scanf ("%d",&num);
-
-    printf ("character: %c\n",num);
-
-    return 0;
+                return 0;
 
 }
-
-
-
-

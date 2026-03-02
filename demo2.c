@@ -1,25 +1,23 @@
- # include <stdio.h>
+//  input a number and display whether number is even or odd. assign-2 question number 2
+
+# include <stdio.h>
 
 int main ()
 
-{                         // 2nd question assign-1
+{
 
     int num;
+    printf ("enter a number:");
 
-    printf (" enter number :");
+    scanf ("%d",&num);
 
-    scanf ("%d" ,&num);
+    if (num % 2==0)
 
-    printf ("char:%c\n",num);
+        printf ("number is even");
 
-    printf ("decimal:%d\n",num);
+        else 
+            printf ("number is odd");
 
-    printf ("octal:%o\n",num);
-
-    printf ("hex:%x\n",num);
-
-    return 0;
+            return 0;
 
 }
-
-
